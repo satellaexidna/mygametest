@@ -18,10 +18,10 @@ jobs:
         java-version: '17'
 
     - name: Make gradlew executable
-      run: chmod +x ./gradlew
+      run: chmod +x ./MyGame/gradlew
 
     - name: Build with Gradle
-      run: ./gradlew assembleDebug
+      run: ./MyGame/gradlew assembleDebug
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
